@@ -70,6 +70,7 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName,
         chatList.push(sender + ": " + msg);
 
         teamList = FileLoad(path.Boss);
+        memberList = FileLoad(path.Member);
         version = FileLoad(path.Ver);
 
         if (msg == "-봇상태") {
